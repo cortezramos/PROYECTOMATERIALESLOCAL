@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="QUERY_LIMPIEZA.Text" xml:space="preserve">
+    <value>IF OBJECT_ID('tblConfigEmpresas') IS NOT NULL
+BEGIN
+	DROP TABLE tblConfigEmpresas
+END
+
+IF OBJECT_ID('tblConfigFincas') IS NOT NULL
+BEGIN
+	DROP TABLE tblConfigFincas
+END
+
+IF OBJECT_ID('tblConfigMenu') IS NOT NULL
+BEGIN
+	DROP TABLE tblConfigMenu
+END
+
+IF OBJECT_ID('tblConfigRoles') IS NOT NULL
+BEGIN
+	DROP TABLE tblConfigRoles
+END
+
+IF OBJECT_ID('tblConfigUsuarios') IS NOT NULL
+BEGIN
+	DROP TABLE tblConfigUsuarios
+END
+
+IF OBJECT_ID('SP_CONFIG_EMPRESAS') IS NOT NULL
+BEGIN
+	DROP PROCEDURE SP_CONFIG_EMPRESAS
+END
+
+IF OBJECT_ID('SP_CONFIG_FINCAS') IS NOT NULL
+BEGIN
+	DROP PROCEDURE SP_CONFIG_FINCAS
+END
+
+IF OBJECT_ID('SP_CONFIG_MENU') IS NOT NULL
+BEGIN
+	DROP PROCEDURE SP_CONFIG_MENU
+END
+
+IF OBJECT_ID('SP_CONFIG_ROLES') IS NOT NULL
+BEGIN
+	DROP PROCEDURE SP_CONFIG_ROLES
+END
+
+IF OBJECT_ID('SP_CONFIG_USUARIOS') IS NOT NULL
+BEGIN
+	DROP PROCEDURE SP_CONFIG_USUARIOS
+END</value>
+  </data>
+  <data name="QUERYSP1.Text" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[SP_CONFIG_EMPRESAS](
+@Opcion			CHAR(3)		=NULL,
+@EmpresaID		INT			=NULL,
+@Empresa		VARCHAR(25)	=NULL,
+@Estado			INT			=NULL
+)
+AS
+BEGIN
+	IF @Opcion='IE'--INSERTAR EMPRESA
+	BEGIN
+		INSERT INTO tblConfigEmpresas(Empresa,Estado)
+		VALUES(@Empresa,1)
+	END
+	IF @Opcion='CE'--CONSULTAR EMPRESAS
+	BEGIN
+		SELECT * FROM tblConfigEmpresas
+		WHERE Estado=1
+	END
+	IF @Opcion='ME'--MODIFICAR EMPRESA
+	BEGIN
+		UPDATE tblConfigEmpresas
+		SET Empresa=@Empresa
+		WHERE EmpresaID=@EmpresaID
+	END
+	IF @Opcion='EE'--ELIMINAR EMPRESA
+	BEGIN
+		UPDATE tblConfigEmpresas
+		SET Estado=@Estado
+		WHERE EmpresaID=@EmpresaID
+	END
+	IF @Opcion='CEC'--CONSULTA EMPRESAS EN COMBO
+	BEGIN
+		SELECT 0 AS EmpresaID, '--Seleccione empresa' AS Empresa UNION
+		SELECT EmpresaID,Empresa FROM tblConfigEmpresas
+	END
+END</value>
+  </data>
+  <data name="QUERYSP2.Text" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[SP_CONFIG_FINCAS](
+@Opcion			VARCHAR(3),
+@FincaID		INT			=NULL,
+@EmpresaID		INT			=NULL,
+@Finca			VARCHAR(60)	=NULL,
+@Estado			INT			=NULL
+)
+AS
+BEGIN
+	IF @Opcion='IF'
+	BEGIN
+		INSERT INTO tblConfigFincas(FincaID,EmpresaID,Finca,Estado)
+		VALUES(@FincaID,@EmpresaID,@Finca,1)
+	END
+	IF @Opcion='CF'--CONSULTAR FINCAS EN COMBO
+	BEGIN
+		SELECT FINCAS.FincaID Planta,FINCAS.EmpresaID,EMPRESAS.Empresa,FINCAS.Finca 
+		FROM tblConfigFincas AS FINCAS INNER JOIN tblConfigEmpresas AS EMPRESAS
+		ON(FINCAS.EmpresaID=EMPRESAS.EmpresaID)
+		WHERE FINCAS.Estado=1
+	END
+	IF @Opcion='MF'
+	BEGIN
+		UPDATE tblConfigFincas
+		SET EmpresaID=@EmpresaID,
+			Finca=@Finca
+		WHERE FincaID=@FincaID
+	END
+	IF @Opcion='EF'
+	BEGIN
+		UPDATE tblConfigFincas
+		SET Estado=@Estado
+		WHERE FincaID=@FincaID
+	END
+	IF @Opcion='CFC'--CONSULTAR FINCAS EN COMBO
+	BEGIN
+		SELECT 0 AS FincaID, '--Seleccione finca' AS Finca UNION
+		SELECT FincaID,Finca FROM tblConfigFincas
+		WHERE EmpresaID=@EmpresaID AND Estado=1
+	END
+END</value>
+  </data>
+  <data name="QUERYSP3.Text" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[SP_CONFIG_MENU](
+@Opcion		CHAR(3),
+@MenuID		INT				=NULL,
+@Nombre		VARCHAR(150)	=NULL,
+@PadreID	INT				=NULL,
+@FrmAbrir	VARCHAR(MAX)	=NULL,
+@FrmImg		INT				=NULL,
+@Estado		INT				=NULL,
+@Usuario	VARCHAR(15)		=NULL,
+@Contra		VARCHAR(30)		=NULL
+)
+AS
+BEGIN
+	IF  @Opcion='DM'--DIBUJA MENU EN LA APLICACION
+	BEGIN
+		SELECT	Menu.MenuID,Menu.Nombre,Menu.PadreID,Menu.FrmAbrir,Menu.FrmImg,
+				Roles.Crear,Roles.Modificar,Roles.Eliminar,Roles.Consultar 
+		FROM tblConfigMenu AS Menu
+		INNER JOIN tblConfigRoles AS Roles
+		ON(Menu.MenuID=Roles.MenuID)
+		INNER JOIN tblConfigUsuarios AS Usuarios
+		ON(Roles.UsuarioID=Usuarios.UsuarioID)
+		WHERE Usuarios.Usuario=@Usuario AND	Usuarios.Contra=@Contra
+		AND Menu.MenuID&lt;&gt;1 AND Menu.Estado=1
+		ORDER BY Nombre
+	END
+	IF @Opcion='CM'--CONSULTA MENUS
+	BEGIN
+		SELECT * 
+		FROM tblConfigMenu
+		WHERE Estado = 1 AND MenuID&lt;&gt;1
+	END
+	IF @Opcion='BM'--BUSCA MENUS
+	BEGIN
+		SELECT * 
+		FROM tblConfigMenu
+		WHERE Estado = 1 AND MenuID&lt;&gt;1 AND Nombre LIKE '%'+@Nombre+'%'
+	END
+	IF @Opcion='CP'--CONSULTA MENUS PADRES
+	BEGIN
+		SELECT 0 AS MenuID, '--Seleccione menu padre' AS Nombre UNION
+		SELECT MenuID,Nombre FROM tblConfigMenu
+		WHERE PadreID=0 AND Estado=1
+	END
+	IF @Opcion='CH'--CONSULTA MENUS HIJOS PARA MOSTRARLOS EN COMBOBOX
+	BEGIN
+		SELECT 0 AS MenuID, '--Seleccione menu' AS Nombre UNION
+		SELECT MenuID,Nombre FROM tblConfigMenu
+		WHERE PadreID&lt;&gt;0 AND Estado=1 AND PadreID=@PadreID
+	END
+	IF @Opcion='CSH'--CONSULTA HIJOS
+	BEGIN
+		SELECT COUNT(*) FROM tblConfigMenu
+		WHERE PadreID=@PadreID AND Estado=1
+	END
+	IF @Opcion='IM'--INGRESA MENU
+	BEGIN
+		INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+		VALUES(@Nombre,@PadreID,@FrmAbrir,@FrmImg,1)
+	END
+		IF @Opcion='MM'--MODIFICAR MENU
+	BEGIN
+		UPDATE tblConfigMenu
+		SET Nombre=@Nombre,PadreID=@PadreID,FrmAbrir=@FrmAbrir,FrmImg=@FrmImg
+		WHERE MenuID=@MenuID
+	END
+	IF @Opcion='EM'--ELIMINAR MENU(CAMBIAR DE ESTADO A UN ELEMENTO DE EL MENU)
+	BEGIN
+		UPDATE tblConfigMenu
+		SET Estado=0
+		WHERE MenuID=@MenuID
+	END
+END</value>
+  </data>
+  <data name="QUERYSP4.Text" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[SP_CONFIG_ROLES](
+@Opcion		CHAR(3),
+@RolID		INT			=NULL,
+@UsuarioID	INT			=NULL,
+@MenuID		INT			=NULL,
+@Crear		INT			=NULL,
+@Modificar	INT			=NULL,
+@Eliminar	INT			=NULL,
+@Consultar	INT			=NULL,
+@Usuario	VARCHAR(15)	=NULL
+)
+AS
+BEGIN
+	IF @Opcion='IR'--INGRESAR ROL
+	BEGIN
+		INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+		VALUES(@UsuarioID,@MenuID,@Crear,@Modificar,@Eliminar,1,1)
+	END
+	IF @Opcion='DR'--DETALLE DE ROLES
+	BEGIN
+		SELECT	Roles.RolID,Menu.MenuID,Menu.Nombre,Menu.PadreID,Menu.FrmAbrir
+		FROM	tblConfigMenu AS Menu
+		INNER JOIN tblConfigRoles AS Roles
+		ON(Menu.MenuID=Roles.MenuID)
+		INNER JOIN tblConfigUsuarios AS Usuarios
+		ON(Roles.UsuarioID=Usuarios.UsuarioID)
+		WHERE Usuarios.UsuarioID=@UsuarioID
+		AND Menu.MenuID&lt;&gt;1 AND Menu.Estado=1
+		ORDER BY PadreID,MenuID,Nombre
+	END
+	IF @Opcion='ER'--ELIMINA ROL
+	BEGIN
+		DELETE tblConfigRoles
+		WHERE RolID=@RolID
+	END
+	IF @Opcion='CR'--CONSULTAR ROLES
+	BEGIN
+		SELECT	Usuarios.Usuario,Menu.Nombre Menu,Roles.Crear,
+		Roles.Modificar,Roles.Eliminar,Roles.Consultar 
+		FROM tblConfigMenu AS Menu
+		INNER JOIN tblConfigRoles AS Roles
+		ON(Menu.MenuID=Roles.MenuID)
+		INNER JOIN tblConfigUsuarios AS Usuarios
+		ON(Roles.UsuarioID=Usuarios.UsuarioID)
+	END
+	IF @Opcion='VMA'--VERIFICAR MENU AGREGADO
+	BEGIN
+		SELECT	COUNT(*)
+		FROM tblConfigMenu AS Menu
+		INNER JOIN tblConfigRoles AS Roles
+		ON(Menu.MenuID=Roles.MenuID)
+		INNER JOIN tblConfigUsuarios AS Usuarios
+		ON(Roles.UsuarioID=Usuarios.UsuarioID)
+		WHERE Roles.MenuID=@MenuID AND Usuarios.UsuarioID=@UsuarioID
+	END
+	IF @Opcion='CMP'--CONSULTAS MENUS PADRES
+	BEGIN
+		SELECT 0 AS MenuID, '--Seleccione menu padre' AS Nombre UNION
+		SELECT MenuID,Nombre FROM tblConfigMenu
+		WHERE PadreID=0 AND Estado=1 AND MenuID&lt;&gt;1
+	END
+	IF @Opcion='CPE'--CONSULTA SI EXISTE PERFIL CREADO
+	BEGIN
+		SELECT TOP 1 Crear,Modificar,Eliminar FROM tblConfigRoles
+		WHERE UsuarioID=@UsuarioID
+	END
+END</value>
+  </data>
+  <data name="QUERYSP5.Text" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[SP_CONFIG_USUARIOS](
+@Opcion		CHAR(3),
+@UsuarioID	INT			=NULL,
+@Usuario	VARCHAR(15)	=NULL,
+@Contra		VARCHAR(30)	=NULL,
+@Estado		INT			=NULL,
+@EmpresaID	INT			=NULL,
+@FincaID	INT			=NULL,
+@Tipo		INT			=NULL
+)
+AS
+BEGIN
+	IF @Opcion='L'--LOGIN
+	BEGIN
+		--SELECT TOP 1 usuarios.UsuarioID,usuarios.Usuario,usuarios.Contra,
+		--		usuarios.Estado,usuarios.EmpresaID,
+		--		roles.Crear,roles.Eliminar,roles.Modificar,empresas.EmpresaID,empresas.Empresa
+		--FROM tblConfigUsuarios AS usuarios INNER JOIN tblConfigRoles AS roles
+		--ON(usuarios.UsuarioID=roles.UsuarioID)
+		--INNER JOIN tblConfigEmpresas AS empresas
+		--ON(usuarios.EmpresaID=empresas.EmpresaID)
+		--WHERE usuarios.Usuario=@Usuario AND Contra=@Contra AND usuarios.Estado=1
+		SELECT	TOP 1 usuarios.UsuarioID,usuarios.Usuario,usuarios.Contra,
+				usuarios.Estado,usuarios.EmpresaID,
+				roles.Crear,roles.Eliminar,roles.Modificar,usuarios.Tipo,
+		empresas.EmpresaID,empresas.Empresa,usuarios.FincaID,fincas.Finca 
+		FROM tblConfigUsuarios AS usuarios INNER JOIN tblConfigRoles AS roles
+		ON(usuarios.UsuarioID=roles.UsuarioID)
+		INNER JOIN tblConfigEmpresas AS empresas
+		ON(usuarios.EmpresaID=empresas.EmpresaID)
+		INNER JOIN tblConfigFincas AS fincas
+		ON(fincas.EmpresaID=usuarios.EmpresaID)
+		WHERE usuarios.Usuario=@Usuario AND Contra=@Contra AND usuarios.Estado=1
+	END
+	IF @Opcion='IU'--INGRESAR USUARIO
+	BEGIN
+		INSERT INTO tblConfigUsuarios(Usuario,Contra,Estado,EmpresaID,FincaID,Tipo)
+		VALUES(@Usuario,@Contra,@Estado,@EmpresaID,@FincaID,@Tipo)
+	END
+	IF @Opcion='CU'--CONSULTAR USUARIOS
+	BEGIN
+		SELECT 0 AS UsuarioID,'-Seleccione usuario' AS Usuario FROM tblConfigUsuarios UNION
+		SELECT UsuarioID,Usuario FROM tblConfigUsuarios
+		WHERE Estado=1
+	END
+	IF @Opcion='MU'--MODIFICAR USUARIO
+	BEGIN
+		UPDATE tblConfigUsuarios
+		SET Contra=@Contra
+		WHERE UsuarioID=@UsuarioID
+	END
+	IF @Opcion='EU'--ELIMIMAR USUARIO
+	BEGIN
+		UPDATE tblConfigUsuarios
+		SET Estado=@Estado
+		WHERE UsuarioID=@UsuarioID
+	END
+	IF @Opcion='CTU'--CONSULTA TODOS LOS USUARIOS
+	BEGIN
+		SELECT Usuarios.UsuarioID,Usuarios.Usuario,Empresa.Empresa FROM tblConfigEmpresas AS Empresa
+		INNER JOIN tblConfigUsuarios AS Usuarios
+		ON(Empresa.EmpresaID=Usuarios.EmpresaID)
+		WHERE Usuarios.Estado=1
+	END
+	IF @Opcion='BTU'--BUSCA TODOS LOS USUARIOS
+	BEGIN
+		SELECT	Usuarios.UsuarioID,Usuarios.Usuario,Empresa.Empresa
+		FROM tblConfigEmpresas AS Empresa
+		INNER JOIN tblConfigUsuarios AS Usuarios
+		ON(Empresa.EmpresaID=Usuarios.EmpresaID)
+		--SELECT UsuarioID,Usuario FROM tblConfigUsuarios
+		WHERE Usuario LIKE '%'+@Usuario+'%' AND Usuarios.Estado=1
+	END
+	IF @Opcion='VU'--VERIFICAR USUARIO
+	BEGIN
+		SELECT UsuarioID FROM tblConfigUsuarios
+		WHERE Usuario=@Usuario AND Estado=1
+	END
+END</value>
+  </data>
+  <data name="QUERYTB1.Text" xml:space="preserve">
+    <value>CREATE TABLE [dbo].[tblConfigEmpresas](
+	[EmpresaID] [int]  NOT NULL,
+	[Empresa] [varchar](25) NULL,
+	[Estado] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[EmpresaID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]</value>
+  </data>
+  <data name="QUERYTB2.Text" xml:space="preserve">
+    <value>CREATE TABLE [dbo].[tblConfigFincas](
+	[FincaID] [int] NOT NULL,
+	[EmpresaID] [int] NULL,
+	[Finca] [varchar](60) NULL,
+	[Estado] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[FincaID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]</value>
+  </data>
+  <data name="QUERYTB3.Text" xml:space="preserve">
+    <value>CREATE TABLE [dbo].[tblConfigMenu](
+	[MenuID] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [varchar](150) NULL,
+	[PadreID] [int] NULL,
+	[FrmAbrir] [varchar](max) NULL,
+	[FrmImg] [int] NULL,
+	[Estado] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[MenuID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]</value>
+  </data>
+  <data name="QUERYTB4.Text" xml:space="preserve">
+    <value>CREATE TABLE [dbo].[tblConfigRoles](
+	[RolID] [int] IDENTITY(1,1) NOT NULL,
+	[UsuarioID] [int] NULL,
+	[MenuID] [int] NULL,
+	[Crear] [int] NULL,
+	[Modificar] [int] NULL,
+	[Eliminar] [int] NULL,
+	[Consultar] [int] NULL,
+	[Estado] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[RolID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]</value>
+  </data>
+  <data name="QUERYTB5.Text" xml:space="preserve">
+    <value>CREATE TABLE [dbo].[tblConfigUsuarios](
+	[UsuarioID] [int] IDENTITY(1,1) NOT NULL,
+	[Usuario] [varchar](15) NULL,
+	[Contra] [varchar](30) NULL,
+	[Estado] [int] NULL,
+	[EmpresaID] [int] NULL,
+	[FincaID] [int] NULL,
+	[Tipo] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[UsuarioID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]</value>
+  </data>
+  <data name="QUERYINSERT1.Text" xml:space="preserve">
+    <value>INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Menu padre',0,'',0,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Super admin',0,'',0,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Empresas',2,'FrmConfigEmpresas',4,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Fincas',2,'FrmConfigFincas',4,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Usuarios',2,'FrmConfigUsuario',4,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Menus',2,'FrmConfigMenu',4,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Roles',2,'FrmConfigRoles',4,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Otros',0,'',0,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Salir',8,'Salir',5,1)
+INSERT INTO tblConfigMenu(Nombre,PadreID,FrmAbrir,FrmImg,Estado)
+VALUES('Cambiar sesion',8,'Cambiar sesion',5,1)</value>
+  </data>
+  <data name="QUERYINSERT2.Text" xml:space="preserve">
+    <value>INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,2,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,3,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,4,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,5,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,6,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,7,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,8,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,9,1,1,1,1,1)
+INSERT INTO tblConfigRoles(UsuarioID,MenuID,Crear,Modificar,Eliminar,Consultar,Estado)
+VALUES(1,10,1,1,1,1,1)</value>
+  </data>
+  <data name="QUERYINSERT3.Text" xml:space="preserve">
+    <value>INSERT INTO tblConfigEmpresas(EmpresaID,Empresa,Estado)
+VALUES(2,'BANASUR',1)
+INSERT INTO tblConfigFincas(FincaID,EmpresaID,Finca,Estado)
+VALUES(25,2,'Ipala 1',1)
+INSERT INTO tblConfigFincas(FincaID,EmpresaID,Finca,Estado)
+VALUES(95,2,'Ipala 2',1)
+INSERT INTO tblConfigUsuarios(Usuario,Contra,Estado,EmpresaID,FincaID,Tipo)
+VALUES('admin','adminit',1,2,25,1)</value>
+  </data>
+</root>
